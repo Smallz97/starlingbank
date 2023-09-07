@@ -16,20 +16,34 @@
         <header>
             <nav class="navigation-bar">
                 <div class="nav-logo">
-                    <img src="assets/starlingbank-logo.svg" alt="navigation bar logo" class="company-logo">
+                    <a href="">
+                        <img src="assets/starlingbank-logo.svg" alt="navigation bar logo" class="company-logo">
+                    </a>
                 </div>
                 <div class="nav-menu">
-                    <div class="nav-link">Features</div>
-                    <div class="nav-link">Pricing</div>  
-                    <div class="nav-link">Help</div>
-                    <div class="nav-link">Blog</div>
-                    <div class="nav-link">About</div>
+                    <a href="" class="nav-link">Features</a>
+                    <a href="" class="nav-link">Pricing</a>  
+                    <a href="" class="nav-link">Help</a>
+                    <a href="" class="nav-link">Blog</a>
+                    <a href="" class="nav-link">About</a>
                 </div>
                 <div class="nav-cta-buttons">
-                    <button type="submit">Log In</button>
-                    <button type="submit">Sign Up</button>
+                    <a href=""><button type="button">Log In</button></a>
+                    <a href=""><button type="button">Sign Up</button></a>
                 </div>
-                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon" onclick="clickHandler">
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </div>
+                <div class="mobile-nav-menu">
+                    <a href="" class="mobile-nav-link">Features</a>
+                    <a href="" class="movile-nav-link">Pricing</a>  
+                    <a href="" class="mobile-nav-link">Help</a>
+                    <a href="" class="mobile-nav-link">Blog</a>
+                    <a href="" class="mobile-nav-link">About</a>
+                    <a href="" class="mobile-nav-link">Log In</a>
+                    <a href="" class="mobile-nav-link">Sign Up</a>
+                </div>
             </nav>
         </header>
         <main>
@@ -38,10 +52,10 @@
                     <p class="hero-title">start saving money</p>
                     <P class="hero-main-text">smart credit card for your daily life</P>
                     <button type="submit" class="hero-button">
-                        <div class="button-text">
+                        <a href="" class="button-text">
                             Download
                             <img src="assets/download-icon.svg" alt="download icon" class="download-icon">
-                        </div>
+                        </a>
                     </button>
                 </div>
                 <div class="hero-image-container">
@@ -50,6 +64,6 @@
             </div>
         </main>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" type="script"></script>
 </body>
 </html>

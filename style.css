@@ -2,22 +2,33 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   list-style-type: none;
+  box-sizing: border-box;
 }
 
 /* Defining variables */
 :root {
-  /* Defining color variables */
-  --black: rgba(30, 30, 30, 1);
-  --white: rgba(255, 255, 255, 1);
-  --blue: rgba(233, 220, 255, 1);
-  --light-blue: rgba(233, 220, 255, 0.8);
-  
-  /* Defining font weight variables */
+  /* Defining font weights as variables */
   --small-font: 500;
   --medium-font: 600;
   --large-font: 700;
+
+  /* Defining button variables */
+  --button-background: #e9dcff;
+  --button-text-color: #1e1e1e;
+
+  /* Defining colors as variables */
+  --plain-white: #fff;
+  --black: rgba(30, 30, 30, 1);
+  --blue: rgba(233, 220, 255, 1);
+  --white: rgba(255, 255, 255, 1);
+  --light-blue: rgba(233, 220, 255, 0.8);
+}
+
+/* Removing default links styling */
+a {
+  text-decoration: none;
+  color: var(--plain-white);
 }
 
 /* Removing default button styling */
@@ -29,7 +40,7 @@ button {
 body {
   color: var(--white);
   background-color: var(--black);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Styling the hero section to the full width and height of the browser's window on desktops for consistency across different browsers */
@@ -70,13 +81,11 @@ body {
   display: flex;
   width: 4.5rem;
   height: 1.6875rem;
-  font-weight: 500;
-  font-style: normal;
   font-size: 1.125rem;
-  line-height: normal;
+  font-weight: var(--small-font);
 }
 
-/* Srtyling the cta-buttons container */
+/* Styling the cta-buttons container */
 .nav-cta-buttons {
   display: flex;
   height: 3.375rem;
@@ -90,17 +99,22 @@ button {
   width: 8.25rem;
   text-align: center;
   font-size: 1.25rem;
-  font-weight: var(--large-font);
-  background: #e9dcff;
   border-radius: 0.625rem;
+  font-weight: var(--large-font);
+  background: var(--button-background);
 }
 
-/* Styling the hamburger icon that toggles the mobile menu */
+/* Setting the hamburger icon to not display on desktop screens */
 .hamburger-icon {
   display: none;
 }
 
-/* Main body styling starts here */
+/* Setting the mobile nav menu to not display on desktop screens */
+.mobile-nav-menu {
+  display: none;
+}
+
+/* Styling the main body of the hero page */
 .main-body {
   display: flex;
   height: 42rem;
@@ -108,6 +122,7 @@ button {
   margin-left: 6.25rem;
   margin-right: 5.12rem;
   justify-content: space-between;
+  /* background: orangered; */
 }
 
 /* Styling the hero-text container */
@@ -125,19 +140,17 @@ button {
   color: var(--light-blue);
   letter-spacing: 0.2475rem;
   text-transform: uppercase;
-  font-style: var(--normal);
   font-weight: var(--small-font);
 }
 
 /* Styling the main hero text */
 .hero-main-text {
-  color: #fff;
-  font-weight: var(--medium-font);
-  font-style: normal;
   font-size: 3.4375rem;
   line-height: 4.8125rem;
+  color: var(--plain-white);
   letter-spacing: 0.06875rem;
   text-transform: capitalize;
+  font-weight: var(--medium-font);
 }
 
 /* Styling the hero cta button */
@@ -154,11 +167,11 @@ button {
 .button-text {
   display: flex;
   width: 9.7474rem;
-  color: #1e1e1e;
-  font-weight: 700;
   font-size: 1.5rem;
   align-items: center;
   justify-content: space-around;
+  font-weight: var(--large-font);
+  color: var(--button-text-color);
 }
 
 /* Styling the hero-image container */
@@ -173,10 +186,8 @@ button {
   padding: 1rem;
 }
 
-
 /* Re-styling for mobile responsiveness */
 @media screen and (max-width: 768px) {
-
   /* Restyling the hero section to optimize for smaller screens */
   .hero {
     margin: 0;
@@ -186,12 +197,13 @@ button {
     padding: 2rem 0 0 1.2rem;
   }
 
-  /* Resetting margins and padding in the navigation bar */
+  /* Restyling margins and padding in the navigation bar */
   .navigation-bar {
-    padding: 0;
     width: 100%;
-    margin: 0 0 3.19rem 0;
+    margin: 0 0 3.2rem 0;
+    padding: 0 2.4rem 0 0;
     justify-content: space-between;
+    /* background-color: blueviolet; */
   }
 
   /* Setting the nav menu and buttons to not display on mobile screens */
@@ -200,10 +212,33 @@ button {
     display: none;
   }
 
-  /* Setting the hamburger icon to display on mobile screens */
-  /* .hamburger-icon {
+  /* Styling the hamburger icon container to display on mobile screens */
+  .hamburger-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: 0.5s;
+    display: inline-block;
+    /* background-color: orangered; */
+  }
 
-  } */
+  /* Styling the bars of the hamburger icon */
+  .first,
+  .second {
+    width: 100%;
+    margin: 6px 0;
+    height: 0.56rem;
+    background-color: var(--white);
+  }
+
+  /* Rotating the first bar on click */
+  .change .first {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  /* Rotating the second bar on click */
+  .change .second {
+    transform: translate(0, -11px) rotate(45deg);
+  }
 
   /* Restyling the main body of the hero section */
   .main-body {
@@ -234,5 +269,18 @@ button {
   /* Resetting the paddings on hero image */
   .hero-image {
     padding: 0;
+  }
+
+  /* Setting the mobile-nav-menu to display on mobile screens */
+  .mobile-nav-menu {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Styling the mobile nav links */
+  .mobile-nav-link {
+    width: 6.7rem;
+    height: 2.3rem;
   }
 }
