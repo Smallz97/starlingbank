@@ -15,11 +15,16 @@
     <section class="hero">
         <header>
             <nav class="navigation-bar">
+                <!-- Navigation bar for large screens & desktops start here -->
+
+                <!-- Company logo -->
                 <div class="nav-logo">
                     <a href="">
                         <img src="assets/starlingbank-logo.svg" alt="navigation bar logo" class="company-logo">
                     </a>
                 </div>
+
+                <!-- Navigation menu starts here -->
                 <div class="nav-menu">
                     <a href="" class="nav-link">Features</a>
                     <a href="" class="nav-link">Pricing</a>  
@@ -27,30 +32,62 @@
                     <a href="" class="nav-link">Blog</a>
                     <a href="" class="nav-link">About</a>
                 </div>
+                <!-- End of navigation menu -->
+
+                <!-- Navigation buttons -->
                 <div class="nav-cta-buttons">
                     <a href=""><button type="button">Log In</button></a>
                     <a href=""><button type="button">Sign Up</button></a>
                 </div>
-                <div class="hamburger-icon" onclick="clickHandler">
+
+                <!-- Hamburger icon -->
+                <div class="hamburger-icon" onclick="openMobileMenu()">
                     <div class="first"></div>
                     <div class="second"></div>
                 </div>
-                <div class="mobile-nav-menu">
-                    <a href="" class="mobile-nav-link">Features</a>
-                    <a href="" class="movile-nav-link">Pricing</a>  
-                    <a href="" class="mobile-nav-link">Help</a>
-                    <a href="" class="mobile-nav-link">Blog</a>
-                    <a href="" class="mobile-nav-link">About</a>
-                    <a href="" class="mobile-nav-link">Log In</a>
-                    <a href="" class="mobile-nav-link">Sign Up</a>
+
+                <!-- End of navigation bar for large screens  -->
+
+                <!-- Mobile side navigation menu starts here -->
+                <div id="mobile-menu" class="side-nav-menu">
+
+                    <!-- Company logo and hamburger icon -->
+                    <div class="mobile-nav-bar">
+                        <a href="">
+                            <img src="assets/starlingbank-logo.svg" alt="navigation bar logo" class="company-logo">
+                        </a>
+                        <div class="hamburger-icon" onclick="closeMobileMenu()">
+                            <div class="first"></div>
+                            <div class="second"></div>
+                        </div>
+                    </div>
+                    <!-- End of conpany logo and hamburger icon -->
+
+                    <!-- Mobile navigation links menu -->
+                    <div class="mobile-nav-menu">
+                        <a href="" class="mobile-nav-link">Features</a>
+                        <a href="" class="mobile-nav-link">Pricing</a>  
+                        <a href="" class="mobile-nav-link">Help</a>
+                        <a href="" class="mobile-nav-link">Blog</a>
+                        <a href="" class="mobile-nav-link">About Us</a>
+                        <a href="" class="mobile-nav-link">Log In</a>
+                        <a href="" class="mobile-nav-link">Sign Up</a>
+                    </div>
+                    <!-- End of mobile menu navigations links -->
                 </div>
+                <!-- Mobile side navigation menu ends here -->
             </nav>
         </header>
+
+        <!-- Main body of the hero section starts here -->
         <main>
             <div class="main-body">
+                <!-- Hero text container-->
                 <div class="hero-text-container">
                     <p class="hero-title">start saving money</p>
                     <P class="hero-main-text">smart credit card for your daily life</P>
+
+                    <!-- Hero cta buttons -->
                     <button type="submit" class="hero-button">
                         <a href="" class="button-text">
                             Download
@@ -58,12 +95,15 @@
                         </a>
                     </button>
                 </div>
+                
+                <!-- Hero image container -->
                 <div class="hero-image-container">
                     <img src="assets/hero-image.png" alt="hero image" class="hero-image">
                 </div>
             </div>
         </main>
+        <!-- Main body of the hero section ends here -->
     </div>
-    <script src="script.js" type="script"></script>
+    <script src="script.js"></script>
 </body>
 </html>
