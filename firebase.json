@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "starlingbank",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

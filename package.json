@@ -1,0 +1,19 @@
+{
+  "name": "payment-landing-page",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Smallz97/starlingbank-landing-page",
+  "description": "starling bank landing page",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Smallz97/starlingbank-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Smallz97/starlingbank-landing-page/issues"
+  },
+}

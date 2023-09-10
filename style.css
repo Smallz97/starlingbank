@@ -108,8 +108,8 @@ button {
   display: none;
 }
 
-/* Setting the mobile nav menu to not display on desktop screens */
-.mobile-nav-menu {
+/* Setting the mobile side-nav menu to not display on desktop screens */
+.side-nav-menu {
   display: none;
 }
 

@@ -16,7 +16,6 @@
         <header>
             <nav class="navigation-bar">
                 <!-- Navigation bar for large screens & desktops start here -->
-
                 <!-- Company logo -->
                 <div class="nav-logo">
                     <a href="">
@@ -24,7 +23,7 @@
                     </a>
                 </div>
 
-                <!-- Navigation menu starts here -->
+                <!-- Navigation menu for large screens and desktops -->
                 <div class="nav-menu">
                     <a href="" class="nav-link">Features</a>
                     <a href="" class="nav-link">Pricing</a>  
@@ -32,22 +31,21 @@
                     <a href="" class="nav-link">Blog</a>
                     <a href="" class="nav-link">About</a>
                 </div>
-                <!-- End of navigation menu -->
 
                 <!-- Navigation buttons -->
                 <div class="nav-cta-buttons">
                     <a href=""><button type="button">Log In</button></a>
                     <a href=""><button type="button">Sign Up</button></a>
                 </div>
-
-                <!-- Hamburger icon -->
+                <!-- End of navigation bar for large screens & desktops -->
+                
+                <!-- Hamburger icon for mobile displays -->
                 <div class="hamburger-icon" onclick="openMobileMenu()">
                     <img src="assets/closed hamburger.svg" alt="hamburger icon unopened">
                 </div>
 
-                <!-- End of navigation bar for large screens  -->
 
-                <!-- Mobile side navigation menu starts here -->
+                <!-- Side navigation menu for mobile displays -->
                 <div id="mobile-menu" class="side-nav-menu">
 
                     <!-- Company logo and hamburger icon -->
@@ -59,7 +57,6 @@
                             <img src="assets/opened hamburger.svg" alt="hamburger icon opened">
                         </div>
                     </div>
-                    <!-- End of conpany logo and hamburger icon -->
 
                     <!-- Mobile navigation links menu -->
                     <div class="mobile-nav-menu">
@@ -71,7 +68,6 @@
                         <a href="" class="mobile-nav-link">Log In</a>
                         <a href="" class="mobile-nav-link">Sign Up</a>
                     </div>
-                    <!-- End of mobile menu navigations links -->
                 </div>
                 <!-- Mobile side navigation menu ends here -->
             </nav>
@@ -103,5 +99,6 @@
         <!-- Main body of the hero section ends here -->
     </div>
     <script src="script.js"></script>
+    <script src="firebase.js" type="module"></script>
 </body>
 </html>
