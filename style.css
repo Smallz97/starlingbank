@@ -198,6 +198,7 @@ button {
   /* Restyling the navigation bar */
   .navigation-bar {
     width: 100%;
+    height: 2.5rem;
     margin: 0 0 3.2rem 0;
     padding: 0 2.4rem 0 0;
     justify-content: space-between;
@@ -211,29 +212,10 @@ button {
 
   /* Styling the hamburger icon container to display on mobile screens */
   .hamburger-icon {
+    display: flex;
     width: 2.5rem;
     height: 2.5rem;
-    display: block;
-    transition: 0.5s;
-  }
-
-  /* Styling the bars of the hamburger icon */
-  .first,
-  .second {
-    width: 100%;
-    margin: 6px 0;
-    height: 0.56rem;
-    background-color: var(--white);
-  }
-
-  /* Rotating the first bar of the hamburger icon when it's clicked */
-  .open .first {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-
-  /* Rotating the second bar of the hamburger icon when it's clicked */
-  .open .second {
-    transform: translate(0, -11px) rotate(45deg);
+    align-items: center;
   }
 
   /* Setting the side nav-menu to display on mobile screens when the hamburger icon is clicked */
@@ -255,28 +237,23 @@ button {
   /* Styling the navbar display for mobile screens when the side menu is opened */
   .mobile-nav-bar {
     display: flex;
-    align-items: center;
     margin: 1rem 1.5rem;
     justify-content: space-between;
   }
 
-  /* Rotating the first bar of the hamburger icon when it's clicked */
-  .close .first {
-    transform: translate(0, 11px) rotate(45deg);
-  }
-
-  /* Rotating the second bar of the hamburger icon when it's clicked */
-  .close .second {
-    transform: translate(0, -11px) rotate(-45deg);
+  /* Styling the mobile nav menu */
+  .mobile-nav-menu {
+    display: flex;
+    flex-direction: column;
   }
 
   /* Styling the mobile nav links */
   .mobile-nav-link {
     width: 100%;
-    height: 4rem;
+    height: 6rem;
     display: flex;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     align-items: center;
     margin-left: 0.75rem;
     padding-left: 0.81rem;
@@ -343,13 +320,25 @@ button {
     .hero-main-text{
       font-size: 3rem;
     }
+
+    /* Restyling the mobile nav menu */
+    .mobile-nav-link {
+      height: 4rem;
+      font-size: 1.5rem;
+    }
   }
 
   /* Reducing the text font size's on mobile screens with max width of 350px */
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 380px) {
     /* Resizing the main text */
     .hero-main-text{
       font-size: 2.8rem;
+    }
+
+    /* Restyling the mobile nav menu */
+    .mobile-nav-link {
+      height: 3.5rem;
+      font-size: 1.5rem;
     }
   }
 }
