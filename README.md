@@ -1,4 +1,4 @@
-![contact us form](./design/desktop.svg)
+![contact us form](assets/desktop-cover.png)
 
 **Challenge Title**
 Payment Landing Page
