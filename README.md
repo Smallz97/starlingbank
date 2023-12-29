@@ -1,4 +1,4 @@
-![contact us form](assets/desktop-cover.png)
+![Desktop screenshot](assets/desktop-cover.png)
 
 **Challenge Title**
 Payment Landing Page
@@ -20,3 +20,7 @@ You'll learn to build a Payment Landing Page for a fictional Payment App and you
 - Show hover effect of all the elements
 - Show hamburger menu on mobile devices
 - Make it responsive
+
+I hope you'll enjoy building this challenge.
+
+Feel free to share your solution on the website or on social media and tag us.
